@@ -1,4 +1,4 @@
-# Xanadu Content Gateway Protocol (XCGP)
+# Xanadu Content Protocol (XCP)
 
 > **Version:** 1.0-draft
 > **Status:** Open Standard for Discussion
@@ -23,7 +23,7 @@ or internal architecture required.
 
 ## Conformance
 
-An implementation **conforms to XCGP v1** if it provides:
+An implementation **conforms to XCP v1** if it provides:
 
 - [ ] `GET /.well-known/xanadu-server.json` (Server Identity)
 - [ ] `GET /api/public/work/{id}` (Content Retrieval)
@@ -41,7 +41,7 @@ Optional:
 
 ### `GET /.well-known/xanadu-server.json`
 
-Every XCGP server MUST publish a JSON document at this path.
+Every XCP server MUST publish a JSON document at this path.
 
 **Response:**
 

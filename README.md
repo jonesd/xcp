@@ -1,11 +1,11 @@
-# Xanadu Content Gateway Protocol (XCGP)
+# Xanadu Content Protocol (XCP)
 
 > An open standard for sharing content across independent hypertext
 > implementations in the Xanadu docuverse.
 
 ## What is this?
 
-XCGP is a minimal protocol that enables any Xanadu-inspired system to
+XCP is a minimal protocol that enables any Xanadu-inspired system to
 reference, retrieve, and verify content on any other system — regardless
 of internal architecture.
 
@@ -14,6 +14,8 @@ It builds on the concepts and open-source release of
 and the vision of [Project Xanadu](https://en.wikipedia.org/wiki/Project_Xanadu)
 by Ted Nelson.
 
+**The name is provisional and open to community discussion.**
+
 ## Why?
 
 The Xanadu docuverse envisions a connected literature where every
@@ -21,7 +23,7 @@ quotation maintains its bond to the original. That vision requires
 **interoperability** — content on one implementation must be
 referenceable from any other.
 
-XCGP provides that interop layer without requiring implementations to
+XCP provides that interop layer without requiring implementations to
 share:
 - Data structures (enfilades, CRDTs, etc.)
 - Wire protocols (FeBe, WebSocket, etc.)
@@ -30,7 +32,7 @@ share:
 
 ## How it works
 
-An implementation conforms to XCGP v1 by providing two HTTP endpoints:
+An implementation conforms to XCP v1 by providing two HTTP endpoints:
 
 1. **`GET /.well-known/xanadu-server.json`** — tells the world who you are
 2. **`GET /api/public/work/{id}`** — serves content with BLAKE3 hash verification
@@ -52,12 +54,12 @@ The full specification is in [spec.md](spec.md).
 
 ## Relationship to Project Xanadu
 
-XCGP is **not** affiliated with, endorsed by, or sponsored by Ted Nelson,
+XCP is **not** affiliated with, endorsed by, or sponsored by Ted Nelson,
 Project Xanadu, the Xanadu Operating Company, Autodesk Inc., or the
 Udanax development team. It is an independent community effort to enable
 interoperability between systems inspired by Ted Nelson's vision.
 
-The protocol name "XCGP" and this specification are licensed under
+The protocol name "XCP" and this specification are licensed under
 Apache 2.0. Anyone may implement the protocol for any purpose.
 
 ## Contributing

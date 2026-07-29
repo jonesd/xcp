@@ -1,4 +1,4 @@
-# Contributing to XCGP
+# Contributing to XCP
 
 ## How to contribute
 
