@@ -70,7 +70,7 @@ Every XCP server MUST publish a JSON document at this path.
 |---|---|
 | `protocol` | MUST be `"xcgp"` |
 | `protocol_version` | MUST be `1` |
-| `implementation` | Name of the implementation (e.g., `"xudanu"`, `"gold"`, `"green"`) |
+| `implementation` | Name of the implementation (e.g., `"xanadu-gold"`, `"xanadu-green"`, `"xudanu"`) |
 | `public_address` | Externally reachable address (`domain:port` or `domain`) |
 | `server_id` | Ed25519 verifying key (hex) — used to verify server signatures |
 | `tumbler_prefix` | Prefix for this server's tumblers (quoted domain: `"domain:port"`) |
